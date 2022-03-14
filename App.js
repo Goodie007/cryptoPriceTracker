@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import RespositoryList from './components/RespositoryList';
-import CoinLists from './components/CoinLists';
+import HomeScreen from './screens/HomeScreen';
+import CoinDetailedScreen from './screens/CoinDetailedScreen';
+
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Text>Hello</Text> */}
-         <CoinLists />
+      {/* <HomeScreen /> */}
+      <CoinDetailedScreen />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +19,7 @@ export default function App() {
    const styles = StyleSheet.create({
      container: {
        
-       backgroundColor: 'black',
+       backgroundColor: 'white',
     
      },
    });
